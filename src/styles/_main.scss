@@ -1,0 +1,22 @@
+header {
+  background-color: darkcyan;
+  margin-bottom: 25px;
+  padding: 35px 0;
+
+  h1,
+  h1 a {
+    color: white;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+main {
+  margin-bottom: 25px;
+}
+
+#tl-dr b {
+  color: darkcyan;
+}
