@@ -83,7 +83,7 @@ exports = module.exports = __webpack_require__(2)(undefined);
 
 
 // module
-exports.push([module.i, "h1, h2, h3, h4, h5 {\n  color: darkcyan; }\n\nheader {\n  background-color: darkcyan;\n  margin-bottom: 25px;\n  padding: 35px 0; }\n  header h1,\n  header h1 a {\n    color: white; }\n    header h1:hover,\n    header h1 a:hover {\n      color: white; }\n\nmain {\n  margin-bottom: 25px; }\n\n#tl-dr b {\n  color: darkcyan; }\n", ""]);
+exports.push([module.i, "h1, h2, h3, h4, h5 {\n  color: darkcyan; }\n\nheader {\n  background-color: darkcyan;\n  margin-bottom: 25px;\n  padding: 35px 0; }\n  header h1,\n  header h1 a {\n    color: white; }\n    header h1:hover,\n    header h1 a:hover {\n      color: white; }\n\nmain {\n  margin-bottom: 25px; }\n\n#tl-dr b {\n  color: darkcyan; }\n\nsection {\n  margin-bottom: 25px;\n  border-bottom: 1px solid #d0e9c6; }\n", ""]);
 
 // exports
 
