@@ -15,20 +15,22 @@
       </div>
     </header>
     <main class="container">
-      <p>Esta es una introducción. Podés <a href="../index.html">volver a la página principal.</a> o podés <a href="ejemplos.html">ir a los ejemplos</a></p>
-      <h2>Contenidos</h2>
+      <p>Podés <a href="../index.html">volver a la página principal.</a> o podés <a href="ejemplos.html">ir a los ejemplos</a>.</p>
+      <h2>Introducción</h2>
+      <h3>Contenidos</h3>
       <ul>
         <li><a href="#backend-frontend">Por qué se diferencia Backend y Frontend?</a></li>
         <li><a href="#frontend">Qué es Frontend?</a></li>
         <li><a href="#backend">Qué es Backend?</a></li>
+        <li><a href="#backend-y-frontend">Cómo trabajan juntos?</a></li>
       </ul>
 
       <section id="backend-frontend">
         <h3>Por qué se diferencia Backend y Frontend?</h3>
         <p>Se separa el Frontend del Backend por un aspecto tecnológico. Lo que sucede es que parte del código lo baja el cliente y otra parte no.
         <p>Esto es como cuando bajás un juego online. Tenés que descargarlo e instalarlo, pero necesitás un servidor para poder conectarte.
-        <p>El hecho de que el cliente baje (y pueda inspeccionar y modificar el código) hace que el código sea más inseguro, por lo que el frontend y el backend se manejan de formas diferentes. Si tenés en tu código contraseñas o claves <em>nunca las deberías poner en el frontend.</em>
-        <p>El Frontend siempre fue HTML, CSS y Javascript. Para lo que es Backend hay mucha más variedad: PHP, C#, Java y NodeJs entre otros.
+        <p>El hecho de que el cliente baje (y pueda inspeccionar y modificar el código) hace que el código sea, por naturaleza, inseguro. Por lo que el frontend y el backend se manejan de formas diferentes. Si tenés en tu código contraseñas o claves <em>nunca las deberías poner en el frontend.</em>
+        <p>Frontend siempre fue HTML, CSS y Javascript. Para lo que es Backend hay mucha más variedad: PHP, C#, Java y NodeJs entre otros.
         <blockquote class="blockquote">
           <p>Uno entonces pensaría "es más fácil conseguir trabajo si aprendo Frontend". La respuesta es <em>Ni</em>.
           <p>No es más fácil porque: Para lo que es Frontend no se buscan empleados "Que sepan Frontend" sino que se buscan por Frameworks o tecnologías. Leasé: "Que tengan experiencia trabajando con: Angular, React, Vue.js, EmberJs, etc".
@@ -54,7 +56,18 @@
 
       <section id="backend">
         <h3>Qué es Backend?</h3>
-        <p>
+        <p>Si Frontend está más pegado a lo que es diseño, colores, animaciones y lógica en el lado del cliente, Backend es la lógica en el lado de los servidores. Es pura lógica. No hay abolustamente nada de estilos, ni diseño ni de diversión (al menos para mí).
+        <p>Tareas comunes del backend es autenticación de usuarios, validar y guardar información y proveer de información al Frontend.
+      </section>
+
+      <section id="backend-y-frontend">
+        <h3>Cómo trabajan juntos?</h3>
+        <p>Lo más común al crear un website es que haya al menos 2 programadores, 1 de Frontend y el programador Backend.
+        <p>El programador Frontend crea toda la parte visual de un website. Esto incluye colores, tamaños, posiciones, animaciones y también comportamiento como "Cuándo el usuario haga click <em>en este lugar</em> quiero que <em>pase esto</em>".
+        <p>Ahora toda (o practicamente toda) la información se va a manejar del lado del Backend. Nunca en el Frontend por su naturaleza insegura. Por lo que una de las responsabiildades del Backend es brindar información (más bien formas de obternerla) al Frontend.
+        <p>Un ejemplo es cuando querés Ingresar a una página en la que ya estás registrado. Ponés tu usuario y contraseña, aparecerán mensajes de error, colores y/o animaciones, y cuando hacés click en "Login" vas a ver un ícono muy lindo que gira y te da a entender que tienes que esperar. Hasta ese momento todo lo que viste fue trabajo del Frontend.
+        <p>Al hacer click en Login, el Frontend hizo un llamado al Backend enviándole tu información (en este usuario y contraseña) y ahora está esperando una respuesta. El Backend, luego de unos chequeos de seguridad en base a ese usuario y contraseña busca en la base de datos por un match (o no) y devuelve la respuesta.
+        <p>Una vez que el Frontend recibe esa respuesta reacciona acorde. Sea mostrando un cartel que dice "Tu nombre de usuario y contraseña no son válidos" o llevándote a otra página.
       </section>
     </main>
 
