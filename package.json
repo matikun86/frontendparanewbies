@@ -1,7 +1,7 @@
 {
   "name": "frontendparanewbies",
   "version": "1.0.0",
-  "description": "Frontend para newbies",
+  "description": "El ABC del Frontend",
   "main": "index.js",
   "scripts": {
     "start": "webpack --watch",
